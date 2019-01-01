@@ -919,7 +919,7 @@ endfunction
 function! s:SQLU_WrapAtCommas()
     let linenum = line("'y+1")
 
-    let sql_keywords = '\<\%(select\|set\|into\|from\|values\|insert\)\>'
+    let sql_keywords = '\<\%(select\|with\|set\|into\|from\|values\|insert\)\>'
 
     " call Decho(" Before column splitter 'y+1=".line("'<").
     " \ ":".col("'<")."  'z-1=".line("'>").":".col("'>"))
@@ -1014,7 +1014,7 @@ function! s:SQLU_WrapExpressions()
 
     return 
 
-    let sql_keywords = '\<\%(select\)\>'
+    let sql_keywords = '\<\%(select\|with\)\>'
     let sql_expression_operator = '' .
                 \ '\<\%(' .
                 \ '\%(end\s\+\)\@<!if\|else\%(if\)\?\|endif\|case\|when\|end' .
