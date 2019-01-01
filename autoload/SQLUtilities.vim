@@ -609,7 +609,7 @@ function! s:SQLU_IndentNestedBlocks()
         let &textwidth = winwidth(winnr())
     endif
     
-    let sql_keywords = '\<\%(select\|set\|\%(insert\s\+\)\?into\|from\|values'.
+    let sql_keywords = '\<\%(select\|with\|set\|\%(insert\s\+\)\?into\|from\|values'.
                 \ '\|order\|group\|having\|return\|call\)\>'
 
     " Indent nested blocks surrounded by ()s.
