@@ -430,7 +430,7 @@ function! s:SQLU_ReformatStatement()
     " [ KEY | NATURAL ] [ join_type ] JOIN
     " | CROSS JOIN
     " force each keyword onto a newline
-    let sql_keywords =  '\<\%(create\|drop\|call\|select\|set\|values\|' .
+    let sql_keywords =  '\<\%(create\|drop\|call\|select\|set\|with\|values\|' .
                 \ sql_update_keywords . '\|' .
                 \ sql_into_keywords . '\|' .
                 \ sql_and_between_keywords . '\|' .
